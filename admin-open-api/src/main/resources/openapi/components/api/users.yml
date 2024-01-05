@@ -1,22 +1,22 @@
 openapi: "3.0.0"
 
 info:
-  title: API User
+  title: API UserEntity
   version: "1.0"
-  description: User API
+  description: UserEntity API
 
 servers:
   - url: http://localhost:8080/backend-admin/api
 
 tags:
-  - name: User
-    description: User specific data.
+  - name: UserEntity
+    description: UserEntity specific data.
 
 paths:
   /users:
     get:
       tags:
-        - User
+        - UserUserEntity
       summary: Get All Users
       operationId: getAllUsers
       parameters:
@@ -46,8 +46,8 @@ paths:
   /users-reference:
     get:
       tags:
-        - User
-      summary: Retrieve an user
+        - UserUserEntity
+      summary: Retrieve an UserEntity
       operationId: getUser
       parameters:
         - name: id

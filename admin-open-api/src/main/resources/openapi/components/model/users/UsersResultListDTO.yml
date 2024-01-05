@@ -1,6 +1,6 @@
 type: object
 properties:
-  appRolesList:
+  appUsersList:
     type: array
     description: The users's list
     items:

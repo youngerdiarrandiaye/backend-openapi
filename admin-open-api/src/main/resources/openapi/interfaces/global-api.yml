@@ -11,7 +11,7 @@ servers:
 tags:
   - name: AppRoles
     description: AppRoles specific data.
-  - name: AppUser
+  - name: UserEntity
     description: App User specific data.
   - name: Produit
     description: Produit specific data.
