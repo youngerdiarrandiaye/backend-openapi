@@ -6,7 +6,7 @@ services:
     container_name: container_mysql-backend-admin-db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: admin-db
+      MYSQL_DATABASE: admin-openapi-db
       MYSQL_USER: diallo
       MYSQL_PASSWORD: passer
     ports:

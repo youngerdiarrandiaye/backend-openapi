@@ -20,16 +20,16 @@ public class BackendAdminApplication {
 	CommandLineRunner commandLineRunner(ProduitService produitService, UserService userService){
 		return args -> {
 			UserDTO userDTO = new UserDTO();
-			userDTO.setNom("Diallo");
-			userDTO.setPrenom("Boubacar Siddy");
-			userDTO.setEmail("test@gmail.com");
+			userDTO.setNom("Diarra");
+			userDTO.setPrenom("Youssou");
+			userDTO.setEmail("you@gmail.com");
 			userDTO.setEtat(1);
 			userDTO.setPassword("passer123");
 			userService.save(userDTO);
 
 			// produits
 			ProduitDTO produitDTO = new ProduitDTO();
-			produitDTO.setName("Ordinateur");
+			produitDTO.setName("Pc");
 			produitDTO.setUser(userDTO);
 			produitService.save(produitDTO);
 		};

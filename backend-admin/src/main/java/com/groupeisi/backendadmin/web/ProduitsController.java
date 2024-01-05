@@ -27,20 +27,6 @@ public class ProduitsController implements ProduitApi {
 
     @Override
     public ResponseEntity<ProduitsResultListDTO> getAllProducts(Integer currentPage, Integer sizePage) throws Exception {
-        ProduitsResultListDTO produitsResultList = new ProduitsResultListDTO();
-        List<ProduitDTO> produitDTOList= new ArrayList<>();
-        ProduitDTO produitDTO = new ProduitDTO();
-        produitDTO.setId(10);
-        produitDTO.setName("test produit");
-        produitDTOList.add(produitDTO);
-
-        produitDTO = new ProduitDTO();
-        produitDTO.setId(11);
-        produitDTO.setName("M2GL");
-        produitDTOList.add(produitDTO);
-
-        produitsResultList.setProduitsList(produitDTOList);
-
-        return new ResponseEntity<>(produitsResultList, HttpStatus.OK);
+        return ProduitApi.super.getAllProducts(currentPage, sizePage);
     }
 }

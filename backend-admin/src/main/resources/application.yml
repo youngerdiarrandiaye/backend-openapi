@@ -8,9 +8,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/admin-db?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: diallo
-    password: passer
+    url: jdbc:mysql://localhost:3306/admin-open-api-db?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password:
   application:
     name: spring-backend-admin
 
